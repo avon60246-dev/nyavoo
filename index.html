@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NyAvo ANDRIANAIVO – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-text">NyAvo<span class="loader-dot">.</span></div>
+    <div class="loader-bar"><div class="loader-progress" id="loaderProgress"></div></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">NyAvo<span class="dot">...</span></div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-section="home">Accueil</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">À propos</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Compétences</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projets</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="section home-section">
+    <div class="home-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="home-content">
+      <div class="home-text animate-up">
+        <p class="greeting">👋 Bonjour, je suis</p>
+        <h1 class="hero-name">NyAvo<br><span class="highlight">ANDRIANAIVO</span></h1>
+        <div class="typewriter-wrapper">
+          <span class="typewriter-prefix">Étudiante en </span>
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-desc">
+          Passionnée par la création des sites web modernes et les nouvelles technologies.
+          Je m'efforce d'apprendre et d'améliorer mes compétences chaque jour.
+        </p>
+        <div class="hero-btns">
+          <a href="#about" class="btn btn-outline">En savoir plus</a>
+          <a href="#projects" class="btn btn-solid">Voir mes projets</a>
+        </div>
+        <div class="social-icons">
+          <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:nyavoandriann@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="home-image animate-right">
+        <div class="img-frame">
+          <img src="sariko.png" alt="nyavo" style="border-radius: 20%;">
+          <div class="img-ring ring-1"></div>
+          <div class="img-ring ring-2"></div>
+          <div class="floating-badge badge-1"><i class="fab fa-html5"></i> HTML5</div>
+          <div class="floating-badge badge-2"><i class="fab fa-react"></i> React</div>
+          <div class="floating-badge badge-3"><i class="fas fa-code"></i> Dev</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-wheel"></div>
+      <span>Défiler</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="section-header">
+      <span class="section-tag">// 01</span>
+      <h2 class="section-title">Qui suis-je ?</h2>
+      <div class="title-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-image-wrap reveal">
+        <div class="about-img-frame">
+          <img src="photo.jpeg" alt="">
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num" data-count="2">0</span>+
+            <span class="stat-label">Projets</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="4">0</span>+
+            <span class="stat-label">Techno.</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <h3>ANDRIANAIVO Narindra NyAvo Nomena Gaëlle</h3>
+        <p>
+          Étudiante en Informatique à l'École de Management et d'Innovation
+          Technologies <strong>(EMIT)</strong> Andrainjato Fianarantsoa.
+        </p>
+        <p>
+          J'ai été passionnée par le développement d'Application Intranet et Internet
+          et les nouvelles technologies. Je m'efforce d'apprendre et d'améliorer
+          mes compétences chaque jour.
+        </p>
+        <div class="about-info">
+          <div class="info-item"><i class="fas fa-envelope"></i><span>nyavoandriann@gmail.com</span></div>
+          <div class="info-item"><i class="fas fa-phone"></i><span>034 88 768 15</span></div>
+          <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Fianarantsoa, Madagascar</span></div>
+          <div class="info-item"><i class="fas fa-globe"></i><span>Disponible freelance</span></div>
+        </div>
+        <a href="#contact" class="btn btn-solid">Me contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills-section">
+    <div class="section-header">
+      <span class="section-tag">// 02</span>
+      <h2 class="section-title">Mes compétences</h2>
+      <div class="title-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal" data-skill="90">
+        <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+        <h3>HTML5</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          <span class="skill-percent">90%</span>
+        </div>
+      </div>
+      <div class="skill-card reveal" data-skill="85">
+        <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+        <h3>CSS3</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          <span class="skill-percent">85%</span>
+        </div>
+      </div>
+      <div class="skill-card reveal" data-skill="40">
+        <div class="skill-icon js"><i class="fab fa-js-square"></i></div>
+        <h3>JavaScript</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+          <span class="skill-percent">40%</span>
+        </div>
+      </div>
+      <div class="skill-card reveal" data-skill="75">
+        <div class="skill-icon react"><i class="fab fa-react"></i></div>
+        <h3>React</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          <span class="skill-percent">75%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects-section">
+    <div class="section-header">
+      <span class="section-tag">// 03</span>
+      <h2 class="section-title">Mes projets</h2>
+      <div class="title-line"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-img project-img-1">
+          <div class="project-overlay">
+            <a href="#" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">Web Design</span>
+          <h3>Mada Travel</h3>
+          <p>Site web de voyage présentant les merveilles de Madagascar. Projet de groupe avec interface moderne, responsive et design attrayant.</p>
+          <a href="#" class="project-btn">Voir le projet →</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-img project-img-2">
+          <div class="project-overlay">
+            <a href="#" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">Portfolio</span>
+          <h3>Portfolio Design</h3>
+          <p>Design moderne et animé pour portfolio professionnel avec effets interactifs, mode sombre et transitions fluides.</p>
+          <a href="#" class="project-btn">Voir le projet →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="section-header">
+      <span class="section-tag">// 04</span>
+      <h2 class="section-title">Me contacter</h2>
+      <div class="title-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <h4>Email</h4>
+          <p>nyavoandriann@gmail.com</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <h4>Téléphone</h4>
+          <p>034 88 768 15</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fab fa-facebook-f"></i></div>
+          <h4>Facebook</h4>
+          <p>NyAvo Andrianaivo</p>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal">
+        <div id="formSuccess" class="form-success" style="display:none">
+          <i class="fas fa-check-circle"></i> Message envoyé avec succès !
+        </div>
+        <div class="contact-form">
+          <div class="form-group">
+            <input type="text" id="nameInput" placeholder=" " required />
+            <label>Votre nom</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="emailInput" placeholder=" " required />
+            <label>Votre email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subjectInput" placeholder=" " required />
+            <label>Sujet</label>
+          </div>
+          <div class="form-group">
+            <textarea id="msgInput" rows="4" placeholder=" " required></textarea>
+            <label>Votre message</label>
+          </div>
+          <button class="btn btn-solid btn-full" id="sendBtn" onclick="sendMessage()">
+            <span>Envoyer le message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <span class="footer-logo">NyAvo<span class="dot">...</span></span>
+      <p>© 2024 NyAvo ANDRIANAIVO — Tous droits réservés</p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:nyavoandriann@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="backTop" onclick="scrollToTop()"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
