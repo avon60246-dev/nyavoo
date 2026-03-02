@@ -568,7 +568,7 @@ img { max-width: 100%; display: block; }
   display: flex; align-items: center; justify-content: center;
 }
 .project-img-1::before {
-  content: '🇲🇬';
+  content: '';
   font-size: 5rem;
   opacity: 0.4;
 }
@@ -576,7 +576,7 @@ img { max-width: 100%; display: block; }
   background: url(Capture\ d’écran\ 2026-03-02\ 114333.png) center/cover no-repeat;
 }
 .project-img-2::before {
-  content: '✨';
+  content: '';
   font-size: 5rem;
   opacity: 0.4;
   position: absolute;
