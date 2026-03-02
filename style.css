@@ -356,8 +356,8 @@ img { max-width: 100%; display: block; }
   animation: spin 12s linear infinite;
 }
 .ring-1 {
-  width: 380px; height: 380px;
-  top: -30px; left: -30px;
+  width: 360px; height: 360px;
+  top: -10px; left: -20px;
 }
 .ring-2 {
   width: 440px; height: 440px;
